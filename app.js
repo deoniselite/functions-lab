@@ -172,3 +172,16 @@
   console.log(stringsLongerThan(["cat", "dog", "elephant"], 8));          // Output: ["elephant"]
   console.log(stringsLongerThan([], 2));                                 // Output: []
   */
+
+  // Question #10
+  const addList = function (...numbers) {
+    if (numbers.length === 0) {
+      return 0;
+    }
+  
+    return numbers.reduce((sum, num) => sum + num, 0);
+  };
+  console.log(addList(1, 2, 3)); 
+  console.log(addList(5, 10, 15, 20)); 
+  console.log(addList()); 
+    
